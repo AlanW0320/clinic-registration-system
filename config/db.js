@@ -21,9 +21,9 @@ const pool = mysql.createPool({
 // Verify connection on startup
 pool.getConnection((err, connection) => {
   if (err) {
-    console.error("❌ Database connection failed:", err.message);
+    console.error("Database connection failed:", err.message);
   } else {
-    console.log("✅ Connected to Amazon RDS MySQL database");
+    console.log("Connected to Amazon RDS MySQL database");
     connection.release();
   }
 });

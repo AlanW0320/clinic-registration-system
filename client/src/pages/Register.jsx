@@ -76,7 +76,7 @@ const Register = () => {
             <label>Confirm Password</label>
             <input type="password" name="confirmPassword" required value={form.confirmPassword} onChange={handleChange} placeholder="Repeat password" />
           </div>
-          <button type="submit" className="btn btn-primary" style={{ width: "100%" }} disabled={loading}>
+          <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }} disabled={loading}>
             {loading ? "Creating account…" : "Create account"}
           </button>
         </form>

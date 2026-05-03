@@ -55,10 +55,10 @@ const Login = () => {
             <input
               type="password" name="password" required
               value={form.password} onChange={handleChange}
-              placeholder="••••••••"
+              placeholder=""
             />
           </div>
-          <button type="submit" className="btn btn-primary" style={{ width: "100%" }} disabled={loading}>
+          <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }} disabled={loading}>
             {loading ? "Signing in…" : "Sign in"}
           </button>
         </form>
