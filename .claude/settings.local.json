@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\('./app.js'\\)\")",
+      "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\('OK:', p.name, p.dependencies.react\\)\")",
+      "Bash(node --check app.js)",
+      "Bash(node --check routes/auth.js)",
+      "Bash(node --check routes/doctors.js)",
+      "Bash(node --check routes/appointments.js)",
+      "Bash(node --check routes/admin.js)",
+      "Bash(node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(64\\).toString\\('hex'\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(powershell -Command \"Compress-Archive -Path app.js, package.json, package-lock.json, .env, .ebextensions, config, middleware, routes, client\\\\build -DestinationPath ..\\\\clinic-app-deploy.zip -Force\")",
+      "Bash(powershell -Command \"\\(Get-Item ..\\\\clinic-app-deploy.zip\\).Length / 1MB\")",
+      "Bash(powershell -Command \"Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::OpenRead\\('c:\\\\Users\\\\alan\\\\Documents\\\\UECS3223 Cloud Computing\\\\clinic-app-deploy.zip'\\).Entries | Select-Object -ExpandProperty FullName | Sort-Object\")",
+      "Bash(powershell -Command ' *)",
+      "Bash(powershell -Command 'Add-Type -AssemblyName System.IO.Compression.FileSystem; $z = [System.IO.Compression.ZipFile]::OpenRead\\('\\\\''c:\\\\Users\\\\alan\\\\Documents\\\\UECS3223 Cloud Computing\\\\clinic-app-deploy.zip'\\\\''\\); $z.Entries | Select-Object -ExpandProperty FullName | Sort-Object; $z.Dispose\\(\\)')",
+      "Bash(node -e \"const bcrypt = require\\('bcryptjs'\\); bcrypt.hash\\('Admin@1234', 12\\).then\\(h => console.log\\(h\\)\\);\")",
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\alan\\\\Documents\\\\UECS3223 Cloud Computing\\\\Clinic Registration System\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(cat)",
+      "Read(//tmp/**)"
+    ]
+  }
+}
