@@ -16,7 +16,12 @@
       "Bash(powershell -Command ' *)",
       "Bash(powershell -Command 'Add-Type -AssemblyName System.IO.Compression.FileSystem; $z = [System.IO.Compression.ZipFile]::OpenRead\\('\\\\''c:\\\\Users\\\\alan\\\\Documents\\\\UECS3223 Cloud Computing\\\\clinic-app-deploy.zip'\\\\''\\); $z.Entries | Select-Object -ExpandProperty FullName | Sort-Object; $z.Dispose\\(\\)')",
       "Bash(node -e \"const bcrypt = require\\('bcryptjs'\\); bcrypt.hash\\('Admin@1234', 12\\).then\\(h => console.log\\(h\\)\\);\")",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\alan\\\\Documents\\\\UECS3223 Cloud Computing\\\\Clinic Registration System\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(cat)",
+      "Read(//tmp/**)"
     ]
   }
 }
