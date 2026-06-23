@@ -116,39 +116,6 @@ npm run build-client
 npm start
 ```
 
-
----
-
-## API Endpoints
-
-### Auth
-| Method | Endpoint              | Description        | Auth     |
-|--------|-----------------------|--------------------|----------|
-| POST   | /api/auth/register    | Register patient   | None     |
-| POST   | /api/auth/login       | Login              | None     |
-
-### Doctors
-| Method | Endpoint              | Description        | Auth     |
-|--------|-----------------------|--------------------|----------|
-| GET    | /api/doctors          | List all doctors   | None     |
-
-### Appointments
-| Method | Endpoint                   | Description                  | Auth    |
-|--------|----------------------------|------------------------------|---------|
-| GET    | /api/appointments          | Get my appointments          | Patient |
-| POST   | /api/appointments          | Book an appointment          | Patient |
-| PUT    | /api/appointments/:id      | Update my appointment        | Patient |
-| DELETE | /api/appointments/:id      | Cancel my appointment        | Patient |
-
-### Admin
-| Method | Endpoint                              | Description               | Auth  |
-|--------|---------------------------------------|---------------------------|-------|
-| GET    | /api/admin/stats                      | Dashboard statistics      | Admin |
-| GET    | /api/admin/patients                   | List all patients         | Admin |
-| DELETE | /api/admin/patients/:id               | Remove a patient          | Admin |
-| GET    | /api/admin/appointments               | List all appointments     | Admin |
-| PUT    | /api/admin/appointments/:id/status    | Update appointment status | Admin |
-
 ---
 
 ## Database Schema
